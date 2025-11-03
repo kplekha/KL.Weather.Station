@@ -20,14 +20,14 @@ namespace KL.Weather.Station
         }
 
 
+        //generates 25 random temperature to simulate events
         static async IAsyncEnumerable<double> SimulateTemperatureSensor()
         {
             var rand = new Random();
-            while (true)
+            for (int i = 0; i < 25; i++) 
             {
-                //delay
                 await Task.Delay(1000);
-                yield return rand.Next(-5, 50);
+                yield return rand.Next(-10, 45);
             }
         }
     }

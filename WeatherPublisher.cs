@@ -18,16 +18,7 @@ namespace KL.Weather.Station
                 _observers.Add(observer);
             
             return new Unsubscriber(_observers, observer);
-        }
-
-        //public async Task SetTemperatureAsync(double newTemp)
-        //{
-        //    if (Math.Abs(_temperature - newTemp) > 0.01)
-        //    {
-        //        _temperature = newTemp;
-        //        await NotifyObserversAsync();
-        //    }
-        //}
+        }       
 
         public async Task StreamTemperatureAsync(IAsyncEnumerable<double> tempStream)
         {
@@ -40,17 +31,7 @@ namespace KL.Weather.Station
                 }
             }
         }
-
-        //private async Task NotifyObserversAsync()
-        //{
-        //    var tasks = new List<Task>();
-        //    foreach (var observer in _observers)
-        //    {
-        //        tasks.Add(observer.OnNextAsync(_temperature));
-        //    }
-        //    await Task.WhenAll(tasks);
-        //}
-
+      
         public async Task EndTransmissionAsync()
         {
             var tasks = new List<Task>();
