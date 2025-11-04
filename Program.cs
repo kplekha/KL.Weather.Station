@@ -1,4 +1,5 @@
-﻿using static System.Collections.Specialized.BitVector32;
+﻿using KL.Weather.Station.Subscribers;
+
 
 namespace KL.Weather.Station
 {

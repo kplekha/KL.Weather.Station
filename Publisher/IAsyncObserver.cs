@@ -1,4 +1,4 @@
-﻿namespace KL.Weather.Station
+﻿namespace KL.Weather.Station.Publisher
 {
     public interface IAsyncObserver<T>
     {

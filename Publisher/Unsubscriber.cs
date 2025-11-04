@@ -1,4 +1,6 @@
-﻿namespace KL.Weather.Station
+﻿using KL.Weather.Station.Publisher;
+
+namespace KL.Weather.Station
 {
     public partial class WeatherPublisher
     {

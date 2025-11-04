@@ -1,6 +1,6 @@
-﻿
+﻿using KL.Weather.Station.Publisher;
 
-namespace KL.Weather.Station
+namespace KL.Weather.Station.Subscribers
 {
     public class AlertSubscriber : IAsyncObserver<double>
     {

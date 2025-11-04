@@ -1,10 +1,11 @@
-﻿using System;
+﻿using KL.Weather.Station.Publisher;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KL.Weather.Station
+namespace KL.Weather.Station.Subscribers
 {
     public class DisplaySubscriber : IAsyncObserver<double>
     {
